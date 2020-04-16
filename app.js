@@ -1,6 +1,7 @@
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
+
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
@@ -10,6 +11,16 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
 
+//Program
+// test starts
+const mana = new Manager("Diego", 31, "diegolehy00@gmail.com", 10)
+const inte = new Intern("Nacho", 28, "ncl@hotmail.com", "Saint D")
+console.log(mana)
+console.log(inte)
+
+const arr = [mana, inte]
+console.log(render(arr))
+// test ends
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
