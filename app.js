@@ -20,7 +20,61 @@ console.log(inte)
 
 const arr = [mana, inte]
 console.log(render(arr))
+
+
 // test ends
+
+// inquirer
+// .prompt([{
+//   message: 'Enter your GitHub username:',
+//   name: 'username'
+// },
+// {
+//   message: 'Enter Github repository name:',
+//   name: 'repo'
+// },
+// {
+//   message: 'Would you like to include the MIT license, inside this project? (type "yes" to accept)',
+//   name: 'ans',
+//   default: 'no'
+// }
+// ])
+// .then(function ({ username, repo, ans }) {
+//   const queryUrl = `https://api.github.com/users/${username}`
+
+//   axios.get(queryUrl).then(function (res) {
+//     const profileImg = res.data.avatar_url
+//     const fullname = res.data.name
+
+
+//     appendFileP('newReadme.md', generateBadges(username, repo, profileImg), function (err) {
+//       if (err) {
+//         throw err
+//       }
+
+//     })
+
+//     if (ans === "yes" ){
+//       writeFileP('LICENSE.txt', generateLICENSE(fullname),function (err) {
+//         if (err) {
+//           throw err
+//         }
+        
+//       })
+//       console.log('\x1b[92mSucced!, LICENSE.txt file was created\x1b[39m')
+//     }
+//     else{
+//       console.log('\x1b[91mRejeted!, LICENSE.txt file was not created\x1b[39m')
+//     }
+
+//     console.log(`\x1b[92mSucced!, newReadme.md file was created\x1b[39m`)
+//   })
+
+
+
+
+
+
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
