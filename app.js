@@ -27,7 +27,13 @@ const render = require("./lib/htmlRenderer");
 // --------------------------------------------------------------\ Program /-----------------------------------------------------------------
 
 let teamMembers = [];
-
+console.log(`
+              \x1b[95mWelcome to Team GENERATOR!\x1b[39m
+     \x1b[36mEnter the information of each member correctly.
+    The app will stop after you enter the last member.\x1b[89m
+                 \x1b[96m>>> Get started <<<\x1b[39m
+    `)
+console.log(`\n\x1b[93m>>>   Team Member   <<<\x1b[39m`)
 generateApp()
 
 
@@ -74,6 +80,7 @@ function generateApp() {
                         
                         
                         if (newMember === 'Yes') {
+                            console.log(`\n\x1b[93m>>> New Team Member <<<\x1b[39m`)
                             generateApp()
                         }
                         else {
@@ -84,7 +91,7 @@ function generateApp() {
                                 
                                 
                             })
-                            console.log('Succed!')
+                            console.log(`\x1b[92m\nSucced!, team.html file was created\x1b[39m`)
                         }
                         
                     })
@@ -106,6 +113,7 @@ function generateApp() {
                         teamMembers.push(new Engineer(name, id, email, github))
                         
                         if (newMember === 'Yes') {
+                            console.log(`\n\x1b[93m>>> New Team Member <<<\x1b[39m`)
                             generateApp()
                         }
                         else {
@@ -116,7 +124,7 @@ function generateApp() {
                                 
                                 
                             })
-                            console.log('Succed!')
+                            console.log(`\x1b[92m\nSucced!, team.html file was created\x1b[39m`)
                         }
                        
                     })
@@ -138,6 +146,7 @@ function generateApp() {
                     teamMembers.push(new Intern(name, id, email, school))
                   
                     if (newMember === 'Yes') {
+                        console.log(`\n\x1b[93m>>> New Team Member <<<\x1b[39m`)
                         generateApp()
                     }
                     else {
@@ -148,7 +157,7 @@ function generateApp() {
                             
                             
                         })
-                        console.log('Succed!')
+                        console.log(`\x1b[92m\nSucced!, team.html file was created\x1b[39m`)
                     }
                 })
             }

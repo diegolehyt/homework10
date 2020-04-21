@@ -1,0 +1,114 @@
+
+body {
+    /* The image used */
+    background-image: url("../images/bc2.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a {
+    color: rgb(212, 0, 255);
+}
+a:hover {
+    color: purple;
+}
+span {
+    font-weight: bold;
+}
+/* Classes */
+.container-fluid {
+    margin-bottom: 50px;
+}
+.team-heading {
+    background-color: rgba(0, 0, 0, 0.4);
+    
+}
+.card-header {
+    background-repeat:no-repeat;
+    height: 130px;
+    width: 100%;
+    max-width:100%;
+    margin-right: 0px;
+    border-style: none;
+}
+.employee-card {
+    border-style: none;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* border-radius: 30px 30px 10px 10px; */
+    transition: all .2s ease-in-out; 
+
+}
+
+.employee-card:hover { 
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.2); 
+}
+.list-group {
+    width: 240px;
+}
+
+/* Manager */
+.manager1 {
+    background-size: cover;
+    background-image: url('../images/manager.jpg');
+}
+.manager2 {
+    background-size: cover; 
+    background-image: url('../images/mana1.jpg');
+}
+/* Engineer */
+.engineer1 {
+    background-size: cover; 
+    background-image: url('../images/engineer.png');
+}
+.engineer2 {
+    background-size: cover; 
+    background-image: url('../images/engi2.jpg');
+}
+/* Intern */
+.intern1 {
+    background-size: cover; 
+    background-image: url('../images/intern.jpg');
+}
+.intern2 {
+    background-size: cover; 
+    background-image: url('../images/inte.jpg');
+}
+/* bs */
+.card-title {
+    color: white;
+}
+/* h */
+.h1 {
+    font-family: "Arial Black", sans-serif;
+    color: white;
+}
+.h5 {
+    color:white; 
+    font-weight: bold;
+}
+.h6 {
+    float: right;
+    text-align: center;
+    margin: 60px -20px;
+    width: 120px;
+    color: white;
+    background-color: rgba(212, 0, 255, 0.664);
+    border-radius: 5px 0px 0px 5px;
+}
+footer {
+    position: static; 
+    height: 500px; 
+    width: 100%; 
+    background-image: url('../images/team.png'); 
+    background-size: cover;
+    
+}
+
